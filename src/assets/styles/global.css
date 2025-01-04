@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Rubik&display=swap');
+
+/*Color*/
+:root {
+  --primary-color: #172432;
+  --secondary-primary-color: #fff;
+  --text-color: #767E86;
+  --accent-color: #FF7757;
+  --secondary-color: #ff8f76;
+  --background-color: #172432;
+  --card-background-color: #FFE8D4;
+  --review-background-color: #F5F6F7;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  font-family: "Rubik", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.icon {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  padding: .6rem 1.5rem;
+  background: var(--accent-color);
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn a {
+  color: var(--secondary-primary-color);
+}
+
+.btn:hover {
+  background: var(--secondary-color);
+}
+
+input {
+  font-size: 100%;
+}

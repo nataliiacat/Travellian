@@ -69,6 +69,7 @@ a {
   font-family: "Rubik", serif;
   font-weight: 400;
   font-style: normal;
+  color: var(--primary-color);
 }
 
 h1,
@@ -104,7 +105,7 @@ h6 {
 .btn {
   padding: .6rem 1.5rem;
   background: var(--accent-color);
-  border-radius: 2rem;
+  border-radius: .7rem;
   border: none;
   outline: none;
   cursor: pointer;

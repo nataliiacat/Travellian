@@ -16,7 +16,7 @@ const Header = () => {
       <header className="header flex">
         <div className="logoDiv">
           <a href="#" className="logo">
-            <img src={logo} />
+            <img src={logo} alt="logo" />
           </a>
         </div>
         <div className={active}>

@@ -14,6 +14,7 @@
 
 html {
   box-sizing: border-box;
+  font-size: 16px;
 }
 
 *,
@@ -102,6 +103,11 @@ h6 {
   align-items: center;
 }
 
+.grid {
+  display: grid;
+  align-items: center;
+}
+
 .btn {
   padding: .6rem 1.5rem;
   background: var(--accent-color);
@@ -109,6 +115,7 @@ h6 {
   border: none;
   outline: none;
   cursor: pointer;
+  color: var(--secondary-primary-color);
 }
 
 .btn a {
@@ -121,4 +128,54 @@ h6 {
 
 input {
   font-size: 100%;
+}
+
+.title {
+  letter-spacing: 1.5px;
+  font-size: 4rem;
+}
+
+.subtitle {
+  font-size: 1.75rem;
+}
+
+.text {
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+@media (max-width: 1440px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .text {
+    font-size: .7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
 }

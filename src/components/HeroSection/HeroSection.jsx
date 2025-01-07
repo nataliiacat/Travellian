@@ -30,7 +30,7 @@ const HeroSection = () => {
               <label className="text" htmlFor="number">
                 Person
               </label>
-              <input id="number" type="number" />
+              <input id="number" type="number"/>
             </div>
             <div className="datePickerDiv input">
               <label className="text" htmlFor="date-label">
@@ -44,8 +44,8 @@ const HeroSection = () => {
                 <IoIosArrowForward className="icon arrowIcon" />
               </button>
             </div>
+            </div>
           </div>
-        </div>
       </section>
     </>
   )

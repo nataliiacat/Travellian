@@ -30,7 +30,7 @@
 .heroContent {
   width: 100%;
   height: max-content;
-  padding: 14rem 0 3rem;
+  padding: 10rem 0 3rem;
   display: flex;
   row-gap: 2rem;
   flex-direction: column;
@@ -45,7 +45,6 @@
 }
 
 .heroTitle {
-  font-size: 5.25rem;
   color: var(--secondary-primary-color);
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
 }

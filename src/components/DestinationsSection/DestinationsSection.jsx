@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { destinations } from '../../data'
 import './DestinationsSection.css'
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { IoLocation } from "react-icons/io5";
 
 const DestinationsSection = () => {
   const [currentIndex, setCurretIndex] = useState(0);
@@ -14,8 +15,21 @@ const DestinationsSection = () => {
       prevIdex === 0 ? destinations.length - 1 : prevIdex - 1
     );
   };
-  const currentDestinations = destinations.slice(currentIndex, currentIndex + destinationsPerPage)
+  const getVisibleDestinations = () => {
+    const startIndex = currentIndex;
+    const endIndex = (startIndex + destinationsPerPage) % destinations.length;
 
+    if (startIndex < endIndex) {
+      return destinations.slice(startIndex, endIndex);
+    } else {
+      return [
+        ...destinations.slice(startIndex),
+        ...destinations.slice(0, endIndex),
+      ];
+    }
+  };
+
+  const visibleDestinations = getVisibleDestinations();
   return (
     <>
       <section className="destinationsSection container">
@@ -25,21 +39,23 @@ const DestinationsSection = () => {
             <p className="text">Most popular destinations around the world, from historical places to natural wonders.</p>
           </div>
           <div className="slider-btns">
-            <button onClick={handlePrev} className="slider-btn prev-btn btn"><IoIosArrowBack /></button>
-            <button onClick={handleNext} className="slider-btn next-btn btn"><IoIosArrowForward /></button>
+            <button onClick={handlePrev} className="slider-btn prev-btn btn"><IoIosArrowBack className="icon"/></button>
+            <button onClick={handleNext} className="slider-btn next-btn btn"><IoIosArrowForward className="icon"/></button>
           </div>
         </div>
         <div className="slider">
           <div className="slider-grid">
-            {currentDestinations.map((destinations) => (
+            {visibleDestinations.map((destinations) => (
               <div key={destinations.id} className="destinations" >
                 <img
                   src={destinations.image}
                   alt={destinations.title}
                   className="destinations-img"
                 />
-                <h3 className="subtitle">{destinations.title}</h3>
-                <p className="text destinationsLocal">{destinations.local}</p>
+                <div className="destinationsLocalContent">
+                  <h3 className="subtitle">{destinations.title}</h3>
+                  <p className="text destinationsLocal"><IoLocation  className="icon"/>{destinations.local}</p>
+                </div>
               </div>
             ))}
           </div>

@@ -131,8 +131,20 @@ input {
 }
 
 .title {
+  display: inline-block;
+  position: relative;
   letter-spacing: 1.5px;
   font-size: 4rem;
+  margin-bottom: 1rem;
+}
+.title::after{
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 60%;
+  height: 3px;
+  background-color: var(--accent-color);
 }
 
 .subtitle {

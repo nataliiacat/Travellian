@@ -7,6 +7,25 @@ import { IoLocation } from "react-icons/io5";
 const DestinationsSection = () => {
   const [currentIndex, setCurretIndex] = useState(0);
   const destinationsPerPage = 3;
+  let touchStartX = 0;
+
+  const handleTouchStart = (e) => {
+    touchStartX = e.touches[0].clientX;
+  };
+
+  const handleTouchMove = (e) => {
+    const touchEndX = e.touches[0].clientX;
+    const swipeThreshold = 50;
+
+    if (touchStartX - touchEndX > swipeThreshold) {
+      setCurretIndex((prevIdex) => (prevIdex + 1) % destinations.length);
+    }
+    if (touchEndX - touchStartX > swipeThreshold) {
+      setCurretIndex((prevIdex) =>
+        prevIdex === 0 ? destinations.length - 1 : prevIdex - 1
+      ); 
+    }
+  };
   const handleNext = () => {
     setCurretIndex((prevIdex) => (prevIdex + 1) % destinations.length);
   };
@@ -32,8 +51,9 @@ const DestinationsSection = () => {
   const visibleDestinations = getVisibleDestinations();
   return (
     <>
-      <section className="destinationsSection container">
-        <div className="destinationsContent">
+      <section className="destinationsSection container" onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}>
+        <div className="sliderContent">
           <div className="textDiv">
             <h1 className="title">Popular Destinations</h1>
             <p className="text">Most popular destinations around the world, from historical places to natural wonders.</p>

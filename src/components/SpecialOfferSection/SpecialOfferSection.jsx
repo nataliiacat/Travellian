@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import StarRating from '../../StarRating/StarRating';
+import StarRating from '../StarRating/StarRating';
 import { specialOffer } from '../../data'
 import './SpecialOfferSection.css'
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
@@ -15,7 +15,7 @@ const SpecialOfferSection = () => {
 
   const handleTouchMove = (e) => {
     const touchEndX = e.touches[0].clientX;
-    const swipeThreshold = 1000;
+    const swipeThreshold = 50;
 
     if (touchStartX - touchEndX > swipeThreshold) {
       setCurretIndex((prevIdex) => (prevIdex + 1) % specialOffer.length);

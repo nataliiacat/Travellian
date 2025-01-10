@@ -6,6 +6,7 @@ import portugal from './assets/images/portugal.jpg'
 import greece from './assets/images/greece.jpg'
 import italy from './assets/images/italy.jpg'
 import paris from './assets/images/paris.jpg'
+import blogimg from './assets/images/blog.jpg'
 import image1 from './assets/images/img1.jpg'
 import image2 from './assets/images/img2.jpg'
 import image3 from './assets/images/img3.jpg'
@@ -77,6 +78,7 @@ export const specialOffer = [
 ];
 
 export const blog = {
+  image: blogimg,
   title: "Beautiful Italy Let’s travel",
   text: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the master- builder of human happiness. No one rejects, dislike, or avoids plasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremly painful. Nor again is there anyone who loves or pursues."
 };

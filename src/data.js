@@ -5,6 +5,7 @@ import lisbon from './assets/images/lisbon.jpg'
 import portugal from './assets/images/portugal.jpg'
 import greece from './assets/images/greece.jpg'
 import italy from './assets/images/italy.jpg'
+import paris from './assets/images/paris.jpg'
 import image1 from './assets/images/img1.jpg'
 import image2 from './assets/images/img2.jpg'
 import image3 from './assets/images/img3.jpg'
@@ -44,7 +45,8 @@ export const specialOffer = [
   {
     id: 1,
     image: portugal,
-    local: "Lisbon, Portugal",
+    local: "Lisbon, Portugal", 
+    rating: 3,
     text: "5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and going through the cites of the world in classical literature.",
     price: "$500"
   },
@@ -52,15 +54,25 @@ export const specialOffer = [
     id: 2,
     image: greece,
     local: "Athens, Greecel",
+    rating: 4,
     text: "5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and going through the cites of the world in classical literature.",
     price: "$800"
   },
   {
     id: 3,
     image: italy,
+    rating: 3,
     local: "Rome, Italy",
     text: "5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and going through the cites of the world in classical literature.",
     price: "$750"
+  },
+  {
+    id: 4,
+    image: paris,
+    local: "Paris City",
+    rating: 5,
+    text: "5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and going through the cites of the world in classical literature.",
+    price: "$700"
   }
 ];
 

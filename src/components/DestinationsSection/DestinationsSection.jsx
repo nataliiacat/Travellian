@@ -66,7 +66,7 @@ const DestinationsSection = () => {
         <div className="slider">
           <div className="slider-grid">
             {visibleDestinations.map((destinations) => (
-              <div key={destinations.id} className="destinations" >
+              <div key={destinations.id} className="destinations slide" >
                 <img
                   src={destinations.image}
                   alt={destinations.title}

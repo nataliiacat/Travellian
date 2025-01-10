@@ -1,0 +1,89 @@
+.textSpecialOffer h1,
+.textSpecialOffer p {
+  text-align: right;
+  padding-left: 0;
+  padding-right: 2rem;
+}
+
+.specialOffer {
+  flex: 0 0 33%;
+  position: relative;
+  width: 100%;
+  height: auto;
+  border-radius: 1.5rem;
+  background-color: var(--card-background-color);
+  transition: transform .9s ease-in-out;
+}
+
+.specialOffer-img {
+  width: 100%;
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.specialOfferContent {
+  padding: 40px 24px;
+}
+
+.specialOfferContent p {
+  padding: 24px 0;
+}
+
+.priceDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.priceText {
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+
+.price {
+  color: var(--accent-color);
+  font-weight: bolder;
+}
+
+.priceDiv .btn {
+  font-size: 2rem;
+  padding: 10px 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .specialOffer {
+    flex: 0 0 40%;
+  }
+
+  .specialOfferContent {
+    padding: 20px 14px;
+  }
+
+  .priceDiv .btn {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .specialOffer {
+    flex: 0 0 49%;
+  }
+
+  .priceDiv .btn {
+    font-size: 1rem;
+  }
+
+  .specialOfferContent p {
+    padding: 10px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .specialOffer {
+    flex: 0 0 100%;
+  }
+
+  .specialOfferContent {
+    padding: 10px 10px;
+  }
+}

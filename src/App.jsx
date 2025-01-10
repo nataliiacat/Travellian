@@ -6,6 +6,7 @@ import DestinationsSection from './components/DestinationsSection/DestinationsSe
 import SpecialOfferSection from './components/SpecialOfferSection/SpecialOfferSection';
 import BlogSection from './components/BlogSection/BlogSection';
 import GallerySection from './components/GallerySection/GallerySection';
+import ExperiencesSection from './components/ExperiencesSection/ExperiencesSection';
 import Footer from './components/Footer/Footer';
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <SpecialOfferSection />
       <BlogSection/>
       <GallerySection/>
+      <ExperiencesSection/>
       <Footer />
     </>
   )

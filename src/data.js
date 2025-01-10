@@ -109,13 +109,15 @@ export const experiences = [
     autor: "John Doe",
     role: "Accountant",
     review: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the master- builder of human happiness.",
+    rating:5
   },
   {
     id: 2,
     image: smith,
     autor: "John Smith",
     role: "Journalist, HWO News",
-    review: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the master- builder of human happiness.",
+    review: "I will give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the master- builder of human happiness.",
+    rating: 3
   },
   {
     id: 3,
@@ -123,12 +125,14 @@ export const experiences = [
     autor: "Tamara Bellis",
     role: "Managing Director, JTH",
     review: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the master- builder of human happiness.",
+    rating: 4
   },
   {
     id: 4,
     image: doe,
     autor: "John Smith",
     role: "Accountant",
-    review: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the master- builder of human happiness.",
+    review: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.",
+    rating: 5
   }
 ];

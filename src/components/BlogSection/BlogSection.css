@@ -21,6 +21,9 @@
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
+.BlogSection .textDiv{
+  padding-bottom: 2rem;
+}
 
 .blogTextDiv {
   max-width: 660px;

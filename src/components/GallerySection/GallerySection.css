@@ -1,0 +1,44 @@
+.gallerySlider {
+  padding-top: 15px;
+}
+
+.gallery {
+  transition: transform .5s ease;
+  cursor: pointer;
+}
+
+.gallery-img {
+  border-radius: 1rem;
+}
+
+.gallery-img::before {
+  content: "";
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.gallery:hover {
+  transform: translateY(-15px);
+
+}
+
+.gallery-img:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+  .gallery {
+    flex: 0 0 30%;
+  }
+}
+
+@media screen and (max-width: 448px) {
+  .gallery {
+    flex: 0 0 46%;
+  }
+}

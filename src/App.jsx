@@ -5,6 +5,7 @@ import HeroSection from './components/HeroSection/HeroSection';
 import DestinationsSection from './components/DestinationsSection/DestinationsSection';
 import SpecialOfferSection from './components/SpecialOfferSection/SpecialOfferSection';
 import BlogSection from './components/BlogSection/BlogSection';
+import GallerySection from './components/GallerySection/GallerySection';
 import Footer from './components/Footer/Footer';
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <DestinationsSection />
       <SpecialOfferSection />
       <BlogSection/>
+      <GallerySection/>
       <Footer />
     </>
   )

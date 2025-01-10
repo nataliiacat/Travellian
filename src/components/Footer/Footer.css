@@ -1,0 +1,116 @@
+.footerContent {
+  background: var(--background-color);
+}
+
+.newsletter {
+  background: var(--review-background-color);
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 50px;
+  position: relative;
+  max-width: 1200px;
+  padding: 60px;
+  bottom: -60px;
+  margin: 0 auto;
+  border-radius: 2rem;
+}
+
+.newsletter h2 {
+  font-size: 3rem;
+  color: var(--text-color);
+}
+
+.newsletterForm {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.email-input {
+  max-width: 370px;
+}
+
+.footerContent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 100px 20px 30px;
+}
+
+.footerItem h4 {
+  color: var(--secondary-primary-color);
+  margin-bottom: 20px;
+  text-align: start;
+}
+
+.footerInner h4 {
+  color: var(--secondary-primary-color);
+}
+
+.social-link li a .icon {
+  fill: var(--secondary-primary-color);
+}
+
+li {
+  list-style: none;
+
+}
+
+.footerItem ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 0;
+}
+
+li,
+li a {
+  color: var(--secondary-primary-color);
+}
+
+.footerInners {
+  display: flex;
+  gap: 50px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 1240px) {
+  .newsletter {
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .newsletterForm {
+    flex-direction: column;
+  }
+
+  .newsletter {
+    padding: 30px;
+    gap: 20px;
+  }
+
+  .newsletterForm .btn {
+    width: 100%;
+  }
+
+  .footerContent {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .newsletter {
+    flex-direction: column;
+  }
+}

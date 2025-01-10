@@ -3,7 +3,7 @@
 }
 
 .gallery {
-  transition: transform .5s ease;
+  transition: transform .10s ease;
   cursor: pointer;
 }
 

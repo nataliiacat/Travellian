@@ -9,15 +9,22 @@ import GallerySection from './components/GallerySection/GallerySection';
 import ExperiencesSection from './components/ExperiencesSection/ExperiencesSection';
 import Footer from './components/Footer/Footer';
 function App() {
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <>
-      <Header />
-      <HeroSection />
-      <DestinationsSection />
-      <SpecialOfferSection />
-      <BlogSection/>
-      <GallerySection/>
-      <ExperiencesSection/>
+      <Header scrollToSection={scrollToSection} />
+      <HeroSection id="heroSection" />
+      <DestinationsSection id="destinationsSection" />
+      <SpecialOfferSection id="specialOfferSection" />
+      <BlogSection id="blogSection" />
+      <GallerySection />
+      <ExperiencesSection id="experiencesSection" />
       <Footer />
     </>
   )

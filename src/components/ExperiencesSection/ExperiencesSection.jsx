@@ -51,7 +51,7 @@ const ExperiencesSection = () => {
   const visibleExperiences = getVisibleExperiences();
   return (
     <>
-      <section className="ExperiencesSection container" onTouchStart={handleTouchStart} onTouchMove={handleTouchMove}>
+      <section id="experiencesSection" className="ExperiencesSection container" onTouchStart={handleTouchStart} onTouchMove={handleTouchMove}>
         <div className="textDiv">
           <h1 className="title">Traveler’s Experiences</h1>
           <p className="text">Here some awesome feedback from our travelers</p>

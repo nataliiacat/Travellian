@@ -3,7 +3,7 @@ import './Header.css'
 import logo from '../../assets/images/logo.svg'
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
 
-const Header = () => {
+const Header = ({ scrollToSection }) => {
   const [active, setActive] = useState('navBar')
   const showNav = () => {
     setActive('navBar activeNavbar')
@@ -22,21 +22,21 @@ const Header = () => {
         <div className={active}>
           <ul className="navList flex">
             <li className="navItem">
-              <a href="#" className="navLink">Home</a>
+              <a href="#heroSection" className="navLink" onClick={() => scrollToSection('heroSection')}>Home</a>
             </li>
             <li className="navItem">
-              <a href="#" className="navLink">Explore</a>
+              <a href="#destinationsSection" className="navLink" onClick={() => scrollToSection('destinationsSection')}>Explore</a>
             </li>
             <li className="navItem">
-              <a href="#" className="navLink">Travel</a>
+              <a href="#specialOfferSection" className="navLink" onClick={() => scrollToSection('specialOfferSection')}>Travel</a>
             </li>
             <li className="navItem">
-              <a href="#" className="navLink">Blog</a>
+              <a href="#blogSection" className="navLink" onClick={() => scrollToSection('blogSection')}>Blog</a>
             </li>
             <li className="navItem">
-              <a href="#" className="navLink">Pricing</a>
+              <a href="#experiencesSection" className="navLink" onClick={() => scrollToSection('experiencesSection')}>Reviews</a>
             </li>
-            <button className="btn form-popup">
+            <button className="btn">
               Login
             </button>
           </ul>

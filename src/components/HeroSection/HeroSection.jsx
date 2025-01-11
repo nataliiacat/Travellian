@@ -10,7 +10,7 @@ const { RangePicker } = DatePicker;
 const HeroSection = () => {
   return (
     <>
-      <section className="heroSection">
+      <section id="heroSection" className="heroSection">
         <div className="overlay"></div>
         <img className="heroBg" src={hero_bg} />
         <div className="heroContent container">

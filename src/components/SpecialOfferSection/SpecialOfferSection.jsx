@@ -51,7 +51,7 @@ const SpecialOfferSection = () => {
   const visibleSpecialOffer = getVisibleSpecialOffer();
   return (
     <>
-      <section className="specialOfferSection container" onTouchStart={handleTouchStart}
+      <section id="specialOfferSection" className="specialOfferSection container" onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}>
         <div className="sliderContent">
           <div className="slider-btns">

@@ -7,7 +7,7 @@ import { IoIosArrowRoundForward } from 'react-icons/io';
 const BlogSection = () => {
   return (
     <>
-      <section className="BlogSection container">
+      <section id="blogSection" className="BlogSection container">
         <div className="textDiv">
           <h1 className="title">Our Blog</h1>
           <p className="text">An insight the incredible experience in the world</p>

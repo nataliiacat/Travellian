@@ -51,7 +51,7 @@ const DestinationsSection = () => {
   const visibleDestinations = getVisibleDestinations();
   return (
     <>
-      <section className="destinationsSection container" onTouchStart={handleTouchStart}
+      <section id="destinationsSection" className="destinationsSection container" onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}>
         <div className="sliderContent">
           <div className="textDiv">
